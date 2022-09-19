@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/almendra_display"
+        android:text="Perce"
+        android:textAlignment="textStart"
+        android:textSize="48sp"
+        android:textStyle="bold"></TextView>
+
+    <ImageButton
+        android:id="@+id/homeBtn"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_home_black_24dp"></ImageButton>
+
+
+    <ImageButton
+        android:id="@+id/favBtn"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/btn_star"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/accountBtn"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/ic_menu_my_calendar"></ImageButton>
+
+
+    <ImageButton
+        android:id="@+id/exitBtn"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/ic_menu_upload"
+        android:rotation="90"></ImageButton>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="802dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="80dp"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Licni podaci"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ime"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="40dp"></TextView>
+            <EditText
+                android:id="@+id/ime"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:text="Mirjana"
+                android:layout_marginLeft="40dp"></EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prezime"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="40dp"></TextView>
+            <EditText
+                android:id="@+id/prezime"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:text="Radosavljevic"
+                android:layout_marginLeft="40dp"></EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="40dp"></TextView>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:text="radosavljevic4m@gmail.com"
+                android:layout_marginLeft="40dp"></EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Broj telefona"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="40dp"></TextView>
+            <EditText
+                android:id="@+id/telefon"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:text="0612439898"
+                android:layout_marginLeft="40dp"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/odbaci"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="Odbaci"
+                    android:layout_marginLeft="40dp"></Button>
+                <Button
+                    android:id="@+id/sacuvaj"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="Sacuvaj"
+                    android:layout_marginLeft="60dp"></Button>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/promeniLozinku"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Promeni lozinku"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="200dp"></Button>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

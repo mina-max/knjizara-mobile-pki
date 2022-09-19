@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/almendra_display"
+            android:text="Perce"
+            android:textSize="48sp"
+            android:textStyle="bold"></TextView>
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="42dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_home_black_24dp"></ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/favBtn"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/btn_star"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/accountBtn"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/ic_menu_my_calendar"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/exitBtn"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/ic_menu_upload"
+            android:rotation="90"></ImageButton>
+    </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_sans_extralight"
+                android:text="PROMOCIJA"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"></TextView>
+
+            <GridView
+                android:id="@+id/gridViewPromocija"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_dark_background"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_sans_extralight"
+                android:text="SVI NASLOVI"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"></TextView>
+
+            <GridView
+                android:id="@+id/gridViewSve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" />
+
+        </LinearLayout>
+
+<!--  </ScrollView>-->
+
+
+</LinearLayout>

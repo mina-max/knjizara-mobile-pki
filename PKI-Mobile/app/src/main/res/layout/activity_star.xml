@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StarActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/almendra_display"
+        android:text="Perce"
+        android:textAlignment="textStart"
+        android:textSize="48sp"
+        android:textStyle="bold"></TextView>
+
+    <ImageButton
+        android:id="@+id/homeBtn"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_home_black_24dp"></ImageButton>
+
+
+    <ImageButton
+        android:id="@+id/favBtn"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/btn_star"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/accountBtn"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/ic_menu_my_calendar"></ImageButton>
+
+
+    <ImageButton
+        android:id="@+id/exitBtn"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/ic_menu_upload"
+        android:rotation="90"></ImageButton>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="802dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="80dp"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/nunito_sans_extralight"
+                android:text="PREPORUČENE KNJIGE"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold"></TextView>
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_dark_background"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

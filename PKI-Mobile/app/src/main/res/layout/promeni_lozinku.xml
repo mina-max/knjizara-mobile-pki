@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stara lozinka"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"></TextView>
+    <EditText
+        android:id="@+id/staraLozinka"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginLeft="40dp"
+        android:inputType="textPassword"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Nova lozinka"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"></TextView>
+    <EditText
+        android:id="@+id/lozinka1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginLeft="40dp"
+        android:inputType="textPassword"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nova lozinka"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"></TextView>
+
+    <EditText
+        android:id="@+id/lozinka2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/black"
+        android:inputType="textPassword"
+        android:textColor="@color/white"></EditText>
+
+</LinearLayout>
